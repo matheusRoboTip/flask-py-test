@@ -1,10 +1,9 @@
 from flask import Flask
 app = Flask(__name__)
 
-@app.route('/')
+@app.route('/simulate')
 def hello_world():
   try:
-    # Seu código aqui
     return 'Hello, World!'
   except Exception as e:
     print(f"Erro: {e}")
